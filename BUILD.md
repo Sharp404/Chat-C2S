@@ -23,10 +23,10 @@ Don't forget to compile the files of this program before running !
     ```./server```
     
     On the client side :
-    You can use on of this command ```telnet localhost 1234``` or ```nc -l -p 1234```
+    You can use one of this command ```telnet localhost <port>``` or ```nc -l -p <port>```
 
 5. [Optionnal] If the sockets are not connected, here is the command to see if sockets are already used :
-    ```netstat -an | grep 1234```
+    ```netstat -an | grep <port>```
 
 6. [Optionnal] It is possible to test if the program has errors by running Valgrind with these commands :
     ```gcc -g serverChat.c handle_clientChat.c -o serverChat```
